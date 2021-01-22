@@ -1,0 +1,16 @@
+{
+  "name": "dns_updater",
+  "version": "1.0.0",
+  "description": "dns updater using puppeteer",
+  "main": "index.js",
+  "dependencies": {
+    "puppeteer-core": "^5.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "oratake",
+  "license": "ISC"
+}
