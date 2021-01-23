@@ -4,6 +4,7 @@
   "description": "dns updater using puppeteer",
   "main": "index.js",
   "dependencies": {
+    "moment": "^2.29.1",
     "puppeteer-core": "^5.5.0"
   },
   "devDependencies": {},
