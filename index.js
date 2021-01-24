@@ -47,8 +47,8 @@ if (
     });
     // Login
     await page.goto('https://secure.netowl.jp/netowl/')
-    await page.type('input[name=mailaddress]', credential.email, { delay: 5 })
-    await page.type('input[name=password]', credential.password, { delay: 5 })
+    await page.type('input[name=mailaddress]', credential.email)
+    await page.type('input[name=password]', credential.password)
     await page.click('input[name=action_user_login]')
     await page.waitForSelector('h1#logo')
     
