@@ -3,9 +3,12 @@ const moment = require('moment');
 // 認証情報を外部に置く
 const credential = require('./credential.js');
 
+// 認証情報の必要プロパティがあるかの確認
 if (
-    'string' !== typeof credential.email ||
-    'string' !== typeof credential.password
+        !credential.hasOwnProperty('email') ||
+        !credential.hasOwnProperty('password') ||
+        !credential.hasOwnProperty('ip') ||
+        !credential.hasOwnProperty('domainId')
     ){
     throw 'Rubbish. Credential info is empty or somethig wrong.';
 }
