@@ -51,6 +51,8 @@ if (
     await page.type('input[name=password]', credential.password)
     await page.click('input[name=action_user_login]')
     await page.waitForSelector('h1#logo')
+    // Login成功
+    await console.log(`[${moment().format("YYYY-MM-DD HH:mm:ssZ")}] Login Successful.`)
     
     // DNS設定ページに遷移
     await page.goto('https://secure.netowl.jp/star-domain/')
@@ -75,5 +77,5 @@ if (
     
     await browser.close()
     
-    console.log('やったぜ。 IP:' + credential.ip);
+    await console.log(`[${moment().format("YYYY-MM-DD HH:mm:ssZ")}] やったぜ。 IP: ${credential.ip}`)
 })()
