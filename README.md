@@ -1,26 +1,31 @@
-# DDNS自動Updater
+# DDNS Auto Updater
 
-## やりたいこと
+## Summary
 
-家の鯖でDDNSするものの自動化
+DDNS client for home server
+(Only for owlnet)
 
-## 現状
+## Job Status
 
-IPを渡すと自動で変更してくれるところまで
+It will regist ip address.
 
-## つかいかた
+## Usage
 
-nodeでつかうものインストール
+install
 ```
 $ npm i
 ```
 
-認証情報を ./credential.js に以下のフォーマットで作成
+Create `./credential.js` on document root using the format below.
 ```
-imodule.exports = {
-    'email': <ログインID>,
-    'password': <ログインPW>,
-    'ip': <変更後のIP>,
-    'domainId': <設定画面で使われているID>
+module.exports = {
+    'email': <login ID>,
+    'password': <login PW>,
+    'ip': <current IP>,
+    'domainId': <domain ID using admin console>
 }
 ```
+
+## What is the poor english?
+
+Server won't show Japanese...
